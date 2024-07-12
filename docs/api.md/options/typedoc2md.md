@@ -14,7 +14,7 @@
 <br><a name="module_grunt-typedoc2md/options/typedoc2md..getOptions"></a>
 
 ### grunt-typedoc2md/options/typedoc2md~getOptions() ⇒ <code>Object</code>
-> Defines and returns the set of options that is passed to task 'check_outdated'.
+> Defines and returns the set of options that is passed to task 'typedoc2md'.
 
 **Returns**: <code>Object</code> - check_outdated default options  
 
@@ -33,7 +33,7 @@
 <br><a name="module_grunt-typedoc2md/options/typedoc2md..toArgs"></a>
 
 ### grunt-typedoc2md/options/typedoc2md~toArgs(grunt, task) ⇒ <code>Promise.&lt;Array.&lt;Object&gt;&gt;</code>
-> Convert grunt task specific options for 'typedoc2md' to an >  array of arguments, which will be used for calling npm.
+> Convert grunt task specific options for 'typedoc2md' to an >  array of arguments, which will be used for calling typedoc.
 
 **Returns**: <code>Promise.&lt;Array.&lt;Object&gt;&gt;</code> - { args, opts }  
 

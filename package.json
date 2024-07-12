@@ -1,6 +1,6 @@
 {
   "name": "grunt-typedoc2md",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "convert typedoc to markdown",
   "author": {
     "name": "Dirk Brenckmann",

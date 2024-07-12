@@ -1,6 +1,6 @@
 # grunt-typedoc2md
 
-run npm commands (like `install` or `update`) from grunt.
+convert typedoc to markdown.
 
 [![npm version](https://img.shields.io/npm/v/grunt-typedoc2md?color=blue)](https://www.npmjs.com/package/grunt-typedoc2md)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
@@ -55,12 +55,14 @@ Alternatively, the code can of course be integrated into the 'gruntfile.js' file
 module.exports = function ( grunt, options ) {
   return {
     options: {
-      "config": "./conf/typedoc/typedoc.json" // MUST be of JSON format
+      "config": "./conf/typedoc/typedoc.json"           // MUST be of JSON format
     },
     always: {
     },
     other: {
-      "config": "./conf/typedoc/other.typedoc.json" // MUST be of JSON format
+      "config": "./conf/typedoc/other.typedoc.json",    // MUST be of JSON format
+      "typedoc-plugin-markdown": false,                 // In case you explicitly may not want to create markdown ;-)
+      "plugin": [ "any", "other", "typedoc", "plugin" ]
     }
   };
 };

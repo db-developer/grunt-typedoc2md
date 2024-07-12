@@ -37,7 +37,7 @@ function _init_STRINGS() {
 const _STRINGS = _init_STRINGS();
 
 /**
- *  Defines and returns the set of options that is passed to task 'check_outdated'.
+ *  Defines and returns the set of options that is passed to task 'typedoc2md'.
  *
  *  @return {Object}  check_outdated default options
  */
@@ -66,7 +66,7 @@ function getTaskOptions( task ) {
 
 /**
  *  Convert grunt task specific options for 'typedoc2md' to an 
- *  array of arguments, which will be used for calling npm.
+ *  array of arguments, which will be used for calling typedoc.
  *
  *  @param  {grunt}                   grunt
  *  @param  {grunt.task}              task

@@ -13,7 +13,7 @@
 "use strict";
 
 /**
- *  Module initializer
+ *  Module table
  *  @ignore
  */
 const _m = {
@@ -52,6 +52,7 @@ const _STRINGS = _init_STRINGS();
 
 /**
  *  Tries to load typedoc package
+ * 
  *  @returns module typedoc
  */
 function getTypeDoc( grunt, pkg = _STRINGS.PACKAGE ) {
@@ -63,7 +64,8 @@ function getTypeDoc( grunt, pkg = _STRINGS.PACKAGE ) {
 }
 
 /**
- *  Trys to lod configfile
+ *  Tries to lod a typedoc config file (must be json format)
+ * 
  *  @param   {*} config 
  *  @returns {object}
  */
@@ -131,7 +133,7 @@ function executeTypeDoc2MD( grunt, task, obj ) {
 }
 
 /**
- *  Run the 'call_npm' task.
+ *  Run the 'typedoc2md' task.
  *
  *  @return {Promise} ... required by callee to terminate async call (on "then")
  */
@@ -142,7 +144,7 @@ function runTaskTypeDoc2MD( grunt, task ) {
 }
 
 /**
- *  Registers the 'call_npm' multitask.
+ *  Registers the 'typedoc2md' multitask.
  *
  *  @param  {grunt} grunt
  */

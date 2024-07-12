@@ -23,7 +23,7 @@
 <br><a name="module_grunt-typedoc2md/tasks/typedoc2md..readJSON"></a>
 
 ### grunt-typedoc2md/tasks/typedoc2md~readJSON(config) ⇒ <code>object</code>
-> Trys to lod configfile
+> Tries to lod a typedoc config file (must be json format)
 
 
 | Param | Type |
@@ -47,14 +47,14 @@
 <br><a name="module_grunt-typedoc2md/tasks/typedoc2md..runTaskTypeDoc2MD"></a>
 
 ### grunt-typedoc2md/tasks/typedoc2md~runTaskTypeDoc2MD() ⇒ <code>Promise</code>
-> Run the 'call_npm' task.
+> Run the 'typedoc2md' task.
 
 **Returns**: <code>Promise</code> - ... required by callee to terminate async call (on "then")  
 
 <br><a name="module_grunt-typedoc2md/tasks/typedoc2md..registerMultiTaskTypeDoc2MD"></a>
 
 ### grunt-typedoc2md/tasks/typedoc2md~registerMultiTaskTypeDoc2MD(grunt)
-> Registers the 'call_npm' multitask.
+> Registers the 'typedoc2md' multitask.
 
 
 | Param | Type |
