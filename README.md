@@ -10,9 +10,6 @@ run npm commands (like `install` or `update`) from grunt.
 [![Build Status](https://travis-ci.com/db-developer/grunt-typedoc2md.svg?branch=master)](https://travis-ci.com/db-developer/grunt-typedoc2md)
 [![dependencies](https://img.shields.io/librariesio/release/npm/grunt-typedoc2md)](https://libraries.io/)
 
-This plugin is a fork of [grunt-typedoc2md](https://github.com/unindented/grunt-typedoc2md) (archived repository)  
-Reason: https://nodejs.org/en/blog/vulnerability/april-2024-security-releases-2
-
 ## content ##
 
 * Usage (see further down this page)
@@ -54,9 +51,19 @@ The following examples assume that the grunt plugin 'load-grunt-config' is used.
 Alternatively, the code can of course be integrated into the 'gruntfile.js' file.  
 
 ```javascript
-// file check_outdated.js
+// file typedoc2md.js
 module.exports = function ( grunt, options ) {
   return {
+    options: {
+      "config": "./conf/typedoc/typedoc.json" // MUST be of JSON format
+    },
+    always: {
+    },
+    other: {
+      "config": "./conf/typedoc/other.typedoc.json" // MUST be of JSON format
+    }
   };
 };
 ```
+
+See [typedoc guide](https://typedoc.org/guides/overview/) for settings, that can be used in typedoc.json.

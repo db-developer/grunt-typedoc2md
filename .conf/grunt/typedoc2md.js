@@ -7,8 +7,7 @@
 module.exports = function ( grunt, options ) {
   return {
     options: {
-      "config": "./somewhere/over/the/rainbow.json",
-      "typedoc-plugin-markdown": true
+      "config": "./somewhere/over/the/rainbow.json"
     },
     always: {
 
