@@ -1,0 +1,4 @@
+{
+  "entryPoints":  [ "src/test/template/index.ts" ],
+  "out":          "./dist/testdocs"
+}
