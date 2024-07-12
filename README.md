@@ -13,6 +13,7 @@ convert typedoc to markdown.
 ## content ##
 
 * Usage (see further down this page)
+  * [Prerequisites](#prerequisites)
   * [Getting started guide](#getting-started)
   * [Usage and examples](#usage)
 
@@ -25,6 +26,14 @@ convert typedoc to markdown.
   * [API of package grunt-typedoc2md](docs/api.index.md)
 
 [Changelog](CHANGELOG.md)
+
+## prerequisites ##
+
+This plugin is independent from any specific **version** of
+* [typedoc](https://www.npmjs.com/package/typedoc)
+* [typedoc-plugin-markdown](https://www.npmjs.com/package/typedoc-plugin-markdown)
+
+**Nevertheless BOTH packages MUST be installed before running 'grunt-typedoc2md'**
 
 ## getting started ##
 
@@ -41,7 +50,7 @@ Once installed, the plugin may be loaded from within your gruntfile:
 
 Setup the task configuration as described below (see usage) and run the task:
 
-<code>grunt call_npm</code>
+<code>grunt typedoc2md</code>
 
 Of cause, the task can be integrated into any complex build process.
 

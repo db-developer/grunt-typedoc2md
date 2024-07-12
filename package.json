@@ -1,6 +1,6 @@
 {
   "name": "grunt-typedoc2md",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "convert typedoc to markdown",
   "author": {
     "name": "Dirk Brenckmann",
@@ -39,6 +39,10 @@
     "url": "https://github.com/db-developer/grunt-typedoc2md/issues"
   },
   "homepage": "https://www.slashlib.org/",
+  "dependencies": {
+    "typedoc": "*",
+    "typedoc-plugin-markdown": "*"
+  },
   "devDependencies": {
     "@babel/core": "^7.24.7",
     "@rollup/plugin-commonjs": "^26.0.1",
